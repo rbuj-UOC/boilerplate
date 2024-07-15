@@ -1,0 +1,37 @@
+{
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "source": "src/index.html",
+  "keywords": [],
+  "author": "Robert Buj <rbuj@uoc.edu>",
+  "license": "CC0-1.0",
+  "scripts": {
+    "compile": "webpack --mode none",
+    "watch": "webpack --watch",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production"
+  },
+  "devDependencies": {
+    "@awmottaz/prettier-plugin-void-html": "^1.6.0",
+    "@eslint/js": "^8.56.0",
+    "@webpack-cli/generators": "^3.0.7",
+    "css-loader": "^7.1.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-html": "^8.1.1",
+    "eslint-plugin-markdown": "^5.1.0",
+    "globals": "^15.8.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "prettier": "^3.3.3",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.1",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "workbox-webpack-plugin": "^7.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "boilerplate-ts",
+  "version": "1.0.0",
+  "description": "Boilerplate for ts",
+  "keywords": [],
+  "author": "Robert Buj <rbuj@uoc.edu>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@awmottaz/prettier-plugin-void-html": "^1.6.0",
+    "@eslint/js": "^8.56.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-html": "^8.1.1",
+    "eslint-plugin-markdown": "^5.1.0",
+    "globals": "^15.8.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.1"
+  }
+}
