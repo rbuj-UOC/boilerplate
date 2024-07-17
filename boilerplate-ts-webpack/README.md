@@ -134,6 +134,7 @@ npx webpack init
 3. Afegir els identificadors de les extensions al fitxer [extensions.json](.vscode/extensions.json)
    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
    - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+   - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
    - [Emmet](https://code.visualstudio.com/docs/editor/emmet) (ja està inclosa)
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
    - [HTMLHint](https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint)
@@ -146,6 +147,10 @@ npx webpack init
 2. Seleccionar `Workspace`
 3. teclejar `default formatter`
 4. Seleccionar l'opció `Prettier`
+
+## EditorConfig
+1. Clicar on es vol crear el fitxer `.editorconfig` amb el botó dret del ratoli a l'explorador
+2. Seleccionar Generate .editorconfig
 
 ## Configuració d'Emmet
 
