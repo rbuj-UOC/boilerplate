@@ -3,11 +3,17 @@
 ## 1. Preparació de l'entorn
 
 Per tal d'executar els fitxers de python dins de VS Code necessitareu:
+
 * Instal·lar [VS Code](https://code.visualstudio.com/),
 * Instal·lar l'extensió [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) per VS Code,
 * Crear un entorn virtual amb virtualenv
 
 Primer cal instal·lar [VS Code](https://code.visualstudio.com/) i l'[extensió de Python per VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python).
+
+> [!TIP]
+> Per llançar VS Code (per exemple `code .`) des d'un terminal afegirem la següent línia al fitxer `~/.bash_profile`:
+>
+> `alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'`
 
 A continuació detallarem els passos per crear un entorn virtual amb `virtualenv`.
 
@@ -15,7 +21,7 @@ A continuació detallarem els passos per crear un entorn virtual amb `virtualenv
 
 Instal·lació de virtualenv en macOS amb Homebrew:
 
-```
+```sh
 brew install virtualenv
 ```
 
@@ -54,4 +60,3 @@ Executem el fitxer de python:
 ```sh
 python src/main.py
 ```
-

@@ -1,0 +1,16 @@
+{
+  "r.lsp.diagnostics": true,
+  "r.rpath.mac": "/Library/Frameworks/R.framework/Resources/bin",
+  "[r]": {
+    "editor.defaultFormatter": "REditorSupport.r",
+    "editor.formatOnSave": true
+  },
+  "[rmd]": {
+    "editor.defaultFormatter": "REditorSupport.r",
+    "editor.formatOnSave": true
+  },
+  "cSpell.words": [
+    "xlab",
+    "ylab"
+  ]
+}

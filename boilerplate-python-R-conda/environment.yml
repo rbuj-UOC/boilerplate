@@ -1,0 +1,8 @@
+name: data-science
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - r-base
+  - r-languageserver
+  - radian

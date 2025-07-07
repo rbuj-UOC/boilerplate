@@ -1,12 +1,10 @@
 # Projecte d'Angular Hello World
 
-## Instal·lar dependències
-
-### Nodejs
+## Nodejs
 
 Instal·lar node 18 (versió LTS actual) en macos mitjançant homebrew:
 
-```
+```sh
 brew install node@18
 ```
 
@@ -20,7 +18,7 @@ export CPPFLAGS="-I/usr/local/opt/node@18/include"
 
 Establir les opcions predeterminades quan es crea un nou fitxer [package.json](./package.json):
 
-```
+```sh
 npm config set init-author-email "rbuj@uoc.edu"
 npm config set init-author-name "Robert Buj"
 npm config set init-license "CC0-1.0"
@@ -30,35 +28,35 @@ npm config set init-license "CC0-1.0"
 
 Instal·lar Angular
 
-```
+```sh
 npm install -g @angular/cli
 ```
 
-## Crear i executar el projecte d'Angular
+#### Crear i executar el projecte d'Angular
 
 Crear el projecte hello-world:
 
-```
+```sh
 ng new hello-world
 ```
 
 Accedir a la carpeta del projecte:
 
-```
+```sh
 cd hello-world
 ```
 
 Iniciar el projecte i obrir un navegador:
 
-```
+```sh
 ng serve --open
 ```
 
-# Prettier
+### Prettier
 
 Instal·lació:
 
-```
+```sh
 npm install --save-dev prettier
 ```
 
@@ -73,21 +71,21 @@ Crear el fitxer [.prettierrc.json](.prettierrc.json)
 }
 ```
 
-# ESLint
+### ESLint
 
 Instal·lació i configuració
 
-```
+```sh
 ng add @angular-eslint/schematics
 ```
 
 Veure el fitxer [eslint.config.js](eslint.config.js)
 
-## eslint-config-prettier
+#### eslint-config-prettier
 
 Instal·lació:
 
-```
+```sh
 npm install prettier-eslint eslint-config-prettier eslint-plugin-prettier --save-dev
 ```
 
@@ -115,45 +113,50 @@ Editar el fitxer [.prettierrc.json](.prettierrc.json)
   ]
 ```
 
-# VS Code
+## VS Code
 
-## Afegir les extensions recomanades a VS Code
+### Instal·lar Visual Studio Code
+
+Baixem i instal·lem [VS Code](https://code.visualstudio.com/).
+
+> [!TIP]
+> Per llançar VS Code (per exemple `code .`) des d'un terminal afegirem la següent línia al fitxer `~/.bash_profile`:
+>
+> `alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'`
+
+### Afegir les extensions recomanades a VS Code
 
 1. Obrir la línia d'ordres a VS Code, en macOS: ⌘⇧P
 2. Executar l'ordre `Configure Recommended Extensions (Workspace Folder)`
 3. Afegir els identificadors de les extensions al fitxer [extensions.json](.vscode/extensions.json)
-   - [Angular snippets](https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2)
    - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
    - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
    - [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
    - [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color)
    - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
-   - [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
    - [CodeMetrics](https://marketplace.visualstudio.com/items?itemName=kisstkondoros.vscode-codemetrics)
-   - [Turbo Console Log](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)
    - [Paste JSON as Code](https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype)
    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
    - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-   - [Emmet](https://code.visualstudio.com/docs/editor/emmet) (ja està inclosa)
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
    - [HTMLHint](https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint)
    - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
-## Configuració de Prettier
+### Configuració de Prettier
 
 1. Obrir les preferències de l'espai de treball a VS Code, en macOS: ⌘,
 2. Seleccionar `Workspace`
 3. teclejar `default formatter`
 4. Seleccionar l'opció `Prettier`
 
-## Formata al desar
+### Formata al desar
 
 1. Obrir les preferències de l'espai de treball a VS Code, en macOS: ⌘,
 2. Seleccionar `Workspace`
 3. teclejar `format on save`
 4. Marcar la casella `Format on Save`
 
-## Organitza les importacions al desar
+### Organitza les importacions al desar
 
 1. Obrir les preferències de l'espai de treball a VS Code, en macOS: ⌘,
 2. Seleccionar `Workspace`
@@ -165,14 +168,14 @@ Editar el fitxer [.prettierrc.json](.prettierrc.json)
 "source.organizeImports": true
 ```
 
-## Configuració d'Emmet
+### Configuració d'Emmet
 
 1. Obrir les preferències de l'espai de treball a VS Code, en macOS: ⌘,
 2. Seleccionar `Workspace`
 3. teclejar `emmet tab`
 4. Habilitar l'opció `Trigger Expansion on Tab`
 
-## Abreviatures d'Emmet
+### Abreviatures d'Emmet
 
 | Abreviatura | Operació                                                  |
 | ----------- | --------------------------------------------------------- |
@@ -181,7 +184,7 @@ Editar el fitxer [.prettierrc.json](.prettierrc.json)
 | ELEMENT.NOM | Crear un ELEMENT (div, h1, p, ...) amb la classe NOM      |
 | ELEMENT#ID  | Crear un ELEMENT (div, h1, p, ...) amb l'identificador ID |
 
-## Dreceres de VS Code
+### Dreceres de VS Code
 
 | Drecera | Acció                     |
 | ------- | ------------------------- |

@@ -1,0 +1,11 @@
+---
+title: Test File
+---
+
+```{r setup, include=FALSE}
+library(datasets)
+```
+
+```{r}
+summary(iris)
+```

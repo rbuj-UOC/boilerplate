@@ -2,11 +2,11 @@
 
 Boilerplate for ts
 
-# Nodejs
+## Nodejs
 
 Establir les opcions predeterminades quan es crea un nou fitxer [package.json](./package.json):
 
-```
+```sh
 npm config set init-author-email "rbuj@uoc.edu"
 npm config set init-author-name "Robert Buj"
 npm config set init-license "CC0-1.0"
@@ -14,28 +14,30 @@ npm config set init-license "CC0-1.0"
 
 Crea un nou fitxer [package.json](./package.json):
 
-```
+```sh
 npm init --yes
 ```
 
-## TypeScript
+### TypeScript
 
-```
+```sh
 npm install --save-dev typescript
 ```
 
 Crear un nou fitxer [tsconfig.json](./tsconfig.json)
 
-```
+```sh
 npx tsc --init
 ```
 
-## Prettier
-```
+### Prettier
+
+```sh
 npm install --save-dev prettier
 ```
 
 Afegir les opcions de formatació al fitxer [.prettierrc.json](.prettierrc.json)
+
 ```json
 {
   "trailingComma": "none",
@@ -50,7 +52,7 @@ Afegir les opcions de formatació al fitxer [.prettierrc.json](.prettierrc.json)
 
 Evitar el tancament d'etiquetes void quam es dona format a documents html amb Prettier:
 
-```
+```sh
 npm install --save-dev @awmottaz/prettier-plugin-void-html
 ```
 
@@ -64,14 +66,15 @@ Afegir el connector al fitxer [.prettierrc.json](.prettierrc.json)
 }
 ```
 
-## ESLint
-```
+### ESLint
+
+```sh
 npm init @eslint/config@latest
 ```
 
-### eslint-config-prettier
+#### eslint-config-prettier
 
-```
+```sh
 npm install --save-dev eslint-config-prettier
 ```
 
@@ -85,9 +88,9 @@ export default [
 ];
 ```
 
-### eslint-plugin-html
+#### eslint-plugin-html
 
-```
+```sh
 npm install --save-dev eslint-plugin-html
 ```
 
@@ -104,9 +107,9 @@ export default [
 ];
 ```
 
-### eslint-plugin-markdown
+#### eslint-plugin-markdown
 
-```
+```sh
 npm install --save-dev eslint-plugin-markdown
 ```
 
@@ -120,9 +123,18 @@ export default [
 ];
 ```
 
-# VS Code
+## VS Code
 
-## Afegir les extensions recomanades a VS Code
+### Instal·lar Visual Studio Code
+
+Baixem i instal·lem [VS Code](https://code.visualstudio.com/).
+
+> [!TIP]
+> Per llançar VS Code (per exemple `code .`) des d'un terminal afegirem la següent línia al fitxer `~/.bash_profile`:
+>
+> `alias code='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'`
+
+### Afegir les extensions recomanades a VS Code
 
 1. Obrir la línia d'ordres a VS Code, en macOS: ⌘⇧P
 2. Executar l'ordre `Extensions: Configure Recommended Extensions (Workspace Folder)`
@@ -135,25 +147,26 @@ export default [
    - [HTMLHint](https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint)
    - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-## Configuració de Prettier
+### Configuració de Prettier
 
 1. Obrir les preferències de l'espai de treball a VS Code, en macOS: ⌘,
 2. Seleccionar `Workspace`
 3. teclejar `default formatter`
 4. Seleccionar l'opció `Prettier`
 
-## EditorConfig
+### EditorConfig
+
 1. Clicar on es vol crear el fitxer `.editorconfig` amb el botó dret del ratoli a l'explorador
 2. Seleccionar Generate .editorconfig
 
-## Configuració d'Emmet
+### Configuració d'Emmet
 
 1. Obrir les preferències de l'espai de treball a VS Code, en macOS: ⌘,
 2. Seleccionar `Workspace`
 3. teclejar `emmet tab`
 4. Habilitar l'opció `Trigger Expansion on Tab`
 
-## Abreviatures d'Emmet
+### Abreviatures d'Emmet
 
 | Abreviatura | Operació                                                  |
 | ----------- | --------------------------------------------------------- |
@@ -162,7 +175,7 @@ export default [
 | ELEMENT.NOM | Crear un ELEMENT (div, h1, p, ...) amb la classe NOM      |
 | ELEMENT#ID  | Crear un ELEMENT (div, h1, p, ...) amb l'identificador ID |
 
-## Dreceres de VS Code
+### Dreceres de VS Code
 
 | Drecera | Acció                     |
 | ------- | ------------------------- |
@@ -174,11 +187,11 @@ export default [
 | Fn F2   | Refactor: canviar el nom  |
 | Fn F3   | Cercar: cercar el següent |
 
-## Depuració
+### Depuració
 
 Afegir la línia al fitxer [tsconfig.json](./tsconfig.json)
 
-```
+```json
    "sourceMap": true
 ```
 

@@ -25,6 +25,12 @@ conda init
 conda config --set auto_activate_base False
 ```
 
+El paquet de R requereix XQuartz:
+
+```sh
+brew install --cask xquartz
+```
+
 ## 1.2. Creació de l'entorn virtual amb conda
 
 Per crear entorns locals a VS Code mitjançant Conda, obriu `Command Palette` (⇧⌘P), cerqueu i seleccioneu l'ordre `Python: Create Environment`.
@@ -41,7 +47,14 @@ L'ordre mostra una llista de versions de Python que es poden utilitzar al vostre
 
 S'instal·laran automàticament les biblioteques definides al fitxer [environment.yml](environment.yml).
 
-## 1.3. Com crear un fitxer environment.yml nou
+## 1.3 Configuració de VS Code
+
+Establim les següents opcions als ajusts de l'espai de treball:
+
+* Rpath: Mac `${workspaceFolder}/.conda/bin/R`
+* Rterm: Mac `${workspaceFolder}/.conda/bin/radian`
+
+## 1.4. Com crear un fitxer environment.yml nou
 
 Elimineu el fitxer environment.yml i la carpeta .conda:
 
@@ -52,7 +65,7 @@ rm -fr environment.yml .conda
 Repetiu el pas anterior per crear un entorn virtual nou amb la versió de Python que vulgueu, després obriu un terminal dins de VS Code i executeu la següent ordre:
 
 ```sh
-conda install matplotlib numpy pandas -q -y
+conda install conda-forge::r-base conda-forge::r-languageserver conda-forge::radian -q -y
 ```
 
 Ara ja podeu bolcar les biblioteques instal·lades amb conda amb la següent ordre:
