@@ -1,0 +1,17 @@
+name: data-scrience
+channels:
+  - conda-forge
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - flake8
+  - ipykernel
+  - matplotlib
+  - numpy
+  - pandas
+  - pip
+  - pycodestyle
+  - python=3.13
+  - pip:
+      - pycodestyle-magic

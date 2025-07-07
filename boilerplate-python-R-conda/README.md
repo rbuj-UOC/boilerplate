@@ -23,6 +23,7 @@ Si treballeu en macOS, podeu fer:
 brew install --cask miniconda
 conda init
 conda config --set auto_activate_base False
+source ~/.bash_profile
 ```
 
 El paquet de R requereix XQuartz:

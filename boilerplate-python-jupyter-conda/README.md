@@ -53,7 +53,8 @@ rm -fr environment.yml .conda
 Repetiu el pas anterior per crear un entorn virtual nou amb la versió de Python que vulgueu, després obriu un terminal dins de VS Code i executeu la següent ordre:
 
 ```sh
-conda install matplotlib numpy pandas -q -y
+conda install flake8 ipykernel matplotlib numpy pandas pip pycodestyle -q -y
+pip install pycodestyle_magic
 ```
 
 Ara ja podeu bolcar les biblioteques instal·lades amb conda amb la següent ordre:
