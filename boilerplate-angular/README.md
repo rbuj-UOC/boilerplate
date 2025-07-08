@@ -1,19 +1,25 @@
-# Projecte d'Angular Hello World
+# Start
 
 ## Nodejs
 
-Instal·lar node 18 (versió LTS actual) en macos mitjançant homebrew:
+Instal·lar node 22 (versió LTS [actual](https://nodejs.org/en/about/previous-releases)) en macos mitjançant homebrew:
 
 ```sh
-brew install node@18
+brew install node@22
 ```
 
-Modificar el fitxer ~/.profile (recomanació després d'instal·lar node 18)
+Modificar el fitxer `~/.bash_profile` (recomanació després d'instal·lar node 22)
 
 ```sh
-export PATH="/usr/local/opt/node@18/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/node@18/lib"
-export CPPFLAGS="-I/usr/local/opt/node@18/include"
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/node@22/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"
+```
+
+Aplicar els canvis:
+
+```sh
+source ~/.bash_profile
 ```
 
 Establir les opcions predeterminades quan es crea un nou fitxer [package.json](./package.json):
@@ -34,16 +40,21 @@ npm install -g @angular/cli
 
 #### Crear i executar el projecte d'Angular
 
-Crear el projecte hello-world:
+Crear el projecte `boilerplate-angular`:
 
 ```sh
-ng new hello-world
+ng new boilerplate-angular --no-strict --standalone=false --style=css --ssr=no --skip-tests --package-manager="npm"
 ```
+
+> [!TIP]
+> Per crear un projecte amb una versió específica d'Angular (p. ex. Angular 20):
+>
+> `npx @angular/cli@20 new boilerplate-angular --no-strict --standalone=false --style=css --ssr=no --skip-tests --package-manager="npm"`
 
 Accedir a la carpeta del projecte:
 
 ```sh
-cd hello-world
+cd boilerplate-angular
 ```
 
 Iniciar el projecte i obrir un navegador:
@@ -139,7 +150,6 @@ Baixem i instal·lem [VS Code](https://code.visualstudio.com/).
    - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
    - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-   - [HTMLHint](https://marketplace.visualstudio.com/items?itemName=HTMLHint.vscode-htmlhint)
    - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
 ### Configuració de Prettier
