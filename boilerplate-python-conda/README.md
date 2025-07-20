@@ -26,6 +26,13 @@ conda config --set auto_activate_base False
 source ~/.bash_profile
 ```
 
+Després s'han d'acceptar els termes del servei dels canals d'instal·lació:
+
+```sh
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+```
+
 ## 1.2. Creació de l'entorn virtual amb conda
 
 Per crear entorns locals a VS Code mitjançant Conda, obriu `Command Palette` (⇧⌘P), cerqueu i seleccioneu l'ordre `Python: Create Environment`.

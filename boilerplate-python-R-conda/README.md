@@ -26,7 +26,14 @@ conda config --set auto_activate_base False
 source ~/.bash_profile
 ```
 
-El paquet de R requereix XQuartz:
+Després s'han d'acceptar els termes del servei dels canals d'instal·lació:
+
+```sh
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+```
+
+El paquet R requereix XQuartz:
 
 ```sh
 brew install --cask xquartz
