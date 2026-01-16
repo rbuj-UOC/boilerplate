@@ -14,5 +14,8 @@
         "editor.detectIndentation": false
     },
     "r.rpath.mac": "${workspaceFolder}/.conda/bin/R",
-    "r.rterm.mac": "${workspaceFolder}/.conda/bin/radian"
+    "r.helpPanel.cacheIndexFiles": "Workspace",
+    "r.alwaysUseActiveTerminal": true,
+    "r.lsp.lang": "en_US.UTF-8",
+    "r.lsp.use_stdio": true
 }

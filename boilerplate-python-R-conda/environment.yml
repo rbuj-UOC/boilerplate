@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - python
+  - pip
   - r-base
   - r-languageserver
-  - radian
