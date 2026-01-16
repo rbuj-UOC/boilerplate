@@ -1,4 +1,9 @@
 {
+  "cSpell.words": [
+    "xlab",
+    "ylab"
+  ],
+  "editor.rulers": [80, 100],
   "r.lsp.diagnostics": true,
   "r.rpath.mac": "/Library/Frameworks/R.framework/Resources/bin",
   "[r]": {
@@ -8,9 +13,5 @@
   "[rmd]": {
     "editor.defaultFormatter": "REditorSupport.r",
     "editor.formatOnSave": true
-  },
-  "cSpell.words": [
-    "xlab",
-    "ylab"
-  ]
+  }
 }
