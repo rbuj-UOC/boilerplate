@@ -13,7 +13,7 @@ import { App } from './app';
     AppRoutingModule
   ],
   providers: [
-    provideBrowserGlobalErrorListeners()
+    provideBrowserGlobalErrorListeners(),
   ],
   bootstrap: [App]
 })
