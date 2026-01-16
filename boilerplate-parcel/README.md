@@ -69,11 +69,9 @@ npm install --save-dev eslint-config-prettier
 Editar el fitxer [eslint.config.mjs](./eslint.config.mjs)
 
 ```js
-import eslintConfigPrettier from "eslint-config-prettier";
+import eslintConfigPrettier from 'eslint-config-prettier';
 
-export default [
-  eslintConfigPrettier,
-];
+export default [eslintConfigPrettier];
 ```
 
 #### eslint-plugin-html
@@ -85,29 +83,35 @@ npm install --save-dev eslint-plugin-html
 Editar el fitxer [eslint.config.mjs](./eslint.config.mjs)
 
 ```js
-import html from "eslint-plugin-html";
+import html from 'eslint-plugin-html';
 
 export default [
   {
-    files: ["**/*.html"],
-    plugins: { html },
-  },
+    files: ['**/*.html'],
+    plugins: { html }
+  }
 ];
 ```
 
-#### eslint-plugin-markdown
+#### eslint/markdown
 
 ```sh
-npm install --save-dev eslint-plugin-markdown
+npm install --save-dev @eslint/markdown
 ```
 
 Editar el fitxer [eslint.config.mjs](./eslint.config.mjs)
 
 ```js
-import markdown from "eslint-plugin-markdown";
+import markdown from '@eslint/markdown';
 
 export default [
-  ...markdown.configs.recommended,
+  {
+    files: ['**/*.md'],
+    plugins: {
+      markdown
+    },
+    ignores: ['**/node_modules/**']
+  }
 ];
 ```
 

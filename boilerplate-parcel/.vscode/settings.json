@@ -1,4 +1,9 @@
 {
-    "emmet.triggerExpansionOnTab": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "emmet.triggerExpansionOnTab": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "cSpell.language": "ca,en"
 }
