@@ -2,18 +2,18 @@
 
 ## Nodejs
 
-Instal·lar node 22 (versió LTS [actual](https://nodejs.org/en/about/previous-releases)) en macos mitjançant homebrew:
+Instal·lar node 24 (versió LTS [actual](https://nodejs.org/en/about/previous-releases)) en macos mitjançant homebrew:
 
 ```sh
-brew install node@22
+brew install node@24
 ```
 
-Modificar el fitxer `~/.bash_profile` (recomanació després d'instal·lar node 22)
+Modificar el fitxer `~/.bash_profile` (recomanació després d'instal·lar node 24)
 
 ```sh
-export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
-export LDFLAGS="-L/opt/homebrew/opt/node@22/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/node@22/include"
+export PATH="/opt/homebrew/opt/node@24/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/node@24/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/node@24/include"
 ```
 
 Aplicar els canvis:
